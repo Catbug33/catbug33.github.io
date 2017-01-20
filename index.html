@@ -5,6 +5,7 @@
    <link rel="stylesheet" type="text/css" href="css/main.css">
    <meta name="viewport" content="width=device-width,initial-scale=1">
    <title>test</title>
+   <link rel="stylesheet" type="text/css" href="css/dd.css" />
    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
  </head>
  <body>
@@ -83,7 +84,7 @@
          <li> <input type="text" placeholder="введите сумму"></li>
          <li>
            <select class='currency_payment' style='background-image:url(img/strelka.svg)'>
-             <option><img src='img/yandex.svg' class="payment_icon">Яндекс.Деньги<img src='img/strelka7.png' class="currency_arrow"></option>
+             <option data-image="img/yandex.svg"><img src='img/yandex.svg' class="payment_icon">Яндекс.Деньги<img src='img/strelka7.png' class="currency_arrow"></option>
              <option><img src='img/privat.svg' class="payment_icon">Приват24<img src='img/strelka7.png' class="currency_arrow"></option>
              <option><img src='img/perfectmoney.svg' class="payment_icon">Perfect Money<img src='img/strelka7.png' class="currency_arrow"></option>
              <option><img src='img/payeer' class="payment_icon">Payeer<img src='img/strelka7.png' class="currency_arrow"></option>
@@ -105,11 +106,13 @@
      <section class="contact">
         <div class="contact_target">
           <span>Сообщить через:</span>
+          <div class='contact_target_select'>
           <select  style='background-image:url(img/strelka.svg)'>
             <option>Email<option>
             <option>SMS<option>
             <option>Telegram<option>
           <select>
+          </div>
         </div>
         <div class="client_contact">
           <span>E-mail адрес:</span>
@@ -187,4 +190,3 @@
   </footer>
    </div>
  </body>
-</html>
