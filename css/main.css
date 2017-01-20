@@ -453,15 +453,15 @@ footer_socials img{
        margin: 0 25px;
      }
      .enter{
-       display: inline;
-       position: absolute;;
-       right: 25px;
-       width: 36px;
+      color: #114fe5;
+      display: flex;
       font-size: 12px;
       font-weight: 800;
-      letter-spacing: 0px;
-      color: #114fe5;
-      margin: 10px 0;
+      letter-spacing: 0;
+      margin: -40px -20px;
+      position: absolute;
+      right: 25px;
+      width: 36px;
      }
      .enter span{
       margin-left: -40px;
@@ -477,7 +477,7 @@ footer_socials img{
      .enter_img{
        width: 45px;
        height: 17px;
-       margin: -4px;
+       margin: 0px;
      }
      .line{
        display: none;
