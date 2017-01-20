@@ -436,7 +436,7 @@ footer_socials img{
      .container {
        width: 320px;
        overflow: hidden;
-       padding: 0;
+       padding-bottom: 30px;
      }
      header{
        display: block;
@@ -444,7 +444,7 @@ footer_socials img{
      }
      .logo{
        display: inline;
-       margin: 10px 30px;
+       margin: 10px 25px;
        height: 22px;
        width: 110px;
      }
