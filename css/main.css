@@ -432,7 +432,7 @@ footer_socials img{
   width: 15px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 700px) {
      .container {
        width: 320px;
        overflow: hidden;
@@ -458,8 +458,7 @@ footer_socials img{
       font-size: 12px;
       font-weight: 800;
       letter-spacing: 0;
-      margin: -40px -20px;
-      position: absolute;
+      margin: -40px 300px;
       right: 25px;
       width: 36px;
      }
@@ -639,6 +638,112 @@ footer_socials img{
 
   }
 }
+@media (min-width: 400px) and (max-width: 600px) {
+
+  .container{
+    width: 420px;
+    padding: 35px 10px;
+  }
+  .menu_img {
+    height: 40px;
+    padding: 0;
+    width: 40px;
+}
+.enter {
+    color: #114fe5;
+    display: flex;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin: -40px 360px;
+    right: 25px;
+    width: 50px;
+    }
+    .enter_img {
+        height: 30px;
+        margin: 0;
+        width: 50px;
+    }
+
+    .logo {
+        display: inline;
+        height: 30px;
+        margin: 10px 25px;
+        width: 140px;
+    }
+    .currency_table_mobile {
+        width: 350px;
+    }
+    .currency_table_title span {
+        margin: 12px 0 17px 130px;
+    }
+
+    .currency_table_mobile input {
+          width: 320px;
+        }
+
+      .currency_payment {
+          width: 200px;
+      }
+
+    .currency_select {
+      margin: 9px 0 0 3px;
+      width: 90px;
+    }
+    .contact_target {
+    margin: 10px 20px;
+    }
+
+    .contact_target_select {
+          margin: 10px 0;
+        }
+    .client_contact {
+      margin: 10px 20px;
+    }
+
+    .client_contact input {
+     margin: 5px 0;
+   }
+   .contact_line {
+    margin: 100px auto 0;
+    width: 380px;
+  }
+
+  article {
+      width: 380px;
+      margin-bottom: 15px;
+  }
+  .article_title {
+    margin: -13px 50px 0;
+  }
+  .column{
+    width: 350px;
+  }
+
+  .socials_mobile span {
+      font-size: 20px;
+      margin: auto 40px 17px 125px;
+  }
+    .socials_mobile li {
+      background-repeat: no-repeat;
+      background-size: 70px auto;
+      height: 70px;
+      width: 70px;
+  }
+    .socials_mobile ul {
+      margin: 15px 30px;
+  }
+    nav {
+      width: 400px;
+  }
+    nav ul {
+      margin: 5px 25px 0;
+  }
+    .footer_column {
+      margin: 23px 20px 0 -20px;
+  }
+}
+
 .dashed_border {
   position: relative;
   border-bottom: 3px dashed #fff;
