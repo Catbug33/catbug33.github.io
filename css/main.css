@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 html,body{
   font-family: 'Open Sans', sans-serif;
-  margin : 0;
+  margin :0;
   padding : 0;
   border : 0 none;
+  height: 100%;
 }
 ol,ul, li{
   list-style-type: none;
@@ -35,8 +36,8 @@ input[type=text] {
   padding: 20px 45px  15px 45px ;
   border: 1px solid;
   border-color:  #666666;
-  margin: auto;
-  color: #666666;
+  margin: 5px auto 5px;
+  color: #666666
 }
 .logo{
   background-image: url(img/logo.png);
@@ -44,6 +45,12 @@ input[type=text] {
   height: 32px;
   display: inline-block;
   position: absolute;;
+}
+.menu{
+  display: none;
+}
+.enter{
+  display: none;
 }
 .line{
   width: 1023.6px;
@@ -123,6 +130,9 @@ section h2{
   letter-spacing: 1.4px;
   text-align: center;
   color: #666666;
+}
+.currency_table_mobile{
+display: none;
 }
 .currency_table{
   margin: 25px auto;
@@ -206,6 +216,10 @@ li input{
 }
 .currency_payment{
   width: 126px;
+}
+.currency_payment option{
+  background-position: right center;
+  background-repeat: no-repeat;
 }
 .currency_table option{
   padding: 9px;
@@ -339,6 +353,9 @@ article{
   padding: 36px 40px 27px 23px;
 
 }
+.socials_mobile{
+  display: none;
+}
 .socials{
   display: flex;
   width: 100%;
@@ -377,6 +394,9 @@ nav ul img{
   width: 13px;
   margin: 0 45px;
 }
+.footer_mobile{
+  display: none;
+}
 .footer_row{
   display: inline-flex;
   font-size: 12px;
@@ -410,6 +430,214 @@ footer_column:last-child{
 }
 footer_socials img{
   width: 15px;
+}
+
+@media screen and (max-width: 400px) {
+     .container {
+       width: 320px;
+       overflow: hidden;
+       padding: 0;
+     }
+     header{
+       display: block;
+       height: 40px;
+     }
+     .logo{
+       display: inline;
+       margin: 10px 30px;
+       height: 22px;
+       width: 110px;
+     }
+     .menu{
+       display: inline;
+       margin: 0 25px;
+     }
+     .enter{
+       display: inline;
+       position: absolute;;
+       right: 25px;
+       width: 36px;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0px;
+      color: #114fe5;
+      margin: 10px 0;
+     }
+     .enter span{
+      margin-left: -40px;
+     }
+     .header_nav{
+       display: none;
+     }
+     .menu_img{
+       width: 25px;
+       height: 25px;
+       padding: 10px 0;
+     }
+     .enter_img{
+       width: 45px;
+       height: 17px;
+       margin: -4px;
+     }
+     .line{
+       display: none;
+     }
+     .icons_list{
+       display: none;
+     }
+     section h1{
+      margin: 30px auto 0;
+     }
+     .currency_table{
+       display: none;
+     }
+     .currency_table_mobile{
+      display: block;
+      margin: 30px auto;
+      width: 300px;
+      height: 155px;
+      background-color: #ffffff;
+      border: solid 1px #aeaeae;
+     }
+
+    .currency_table_title span {
+        margin: 12px 0 17px 109px;
+    }
+    .currency_table_mobile input{
+      width: 270px;
+      height: 30px;
+      background-color: #ffffff;
+      border: solid 0.8px #666666;
+      margin: 10px 15px;
+    }
+    .currency_table_mobile select {
+    background-color: #ffffff;
+    /*border: solid 0.8px #666666;*/
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: 10px auto;
+    display: inline;
+    width: 100%
+    /*margin: 9px 0 0 15px;
+    height: 30px;*/
+   }
+   .currency_payment{
+     background-color: #ffffff;
+     width: 180px;
+     border: 0.8px solid #666666;
+     height: 30px;
+     margin: 9px 25px 0 15px;
+     display: inline-block;
+   }
+   .currency_payment select{
+     width: 160px;
+     height: 28px;
+   }
+
+   .currency_select{
+     background-color: #ffffff;
+     width: 75px;
+     border: 0.8px solid #666666;
+     height: 30px;
+     margin: 9px 15px 0 0;
+     display: inline-block;
+   }
+   .currency_select select{
+     width: 65px;
+     height: 28px;
+   }
+   .currency_table_raw{
+     display: flex;
+   }
+  .currency_table_double_line{
+    width: 300px;
+    border-bottom: solid 1px #aeaeae;
+  }
+  .contact{
+    background-color: #ffffff;
+    background: rgba(0, 0, 0, 0) radial-gradient(#ffffff, #ffffff) repeat scroll 0 0;
+    display: block;
+    padding-top: 15px;
+    margin: 0 15px;
+  }
+  .contact span {
+    margin: 0;
+  }
+  .contact_target{
+    display: block;
+  }
+  .client_contact{
+    display: block;
+  }
+
+  .contact_line {
+      border-bottom: 2px solid #aeaeae;
+      margin: 45px auto;
+      width: 300px;
+  }
+  article{
+    width: 300px;
+  }
+  .article_title{
+    margin: -13px 10px 0;
+  }
+  .column_big{
+    display: none;
+  }
+  .column{
+      width: 280px;
+  }
+  .socials{
+    display: none;
+  }
+  .socials_mobile{
+    display: inline-block;
+  }
+
+  .socials_mobile span {
+    font-size: 16px;
+    font-weight: bold;
+    margin: auto 40px 17px 90px;
+  }
+  .socials_mobile ul{
+    display: flex;
+    margin: 15px 20px;
+  }
+  .socials_mobile li {
+    background-size: 50px;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+  }
+  footer{
+    display: none;
+  }
+  .footer_row{
+    margin: 0;
+  }
+  .footer_mobile{
+    display: block;
+    height: 530px;
+    padding-bottom: 10px;
+  }
+  nav ul img {
+      margin: 0 25px;
+      width: 13px;
+  }
+  nav ul{
+    display: flex;
+  }
+  nav{
+    width: 300px;
+  }
+  .footer_column{
+    width: 130px;
+    margin: 23px 20px 0 -50px;
+  }
+  .footer_column li{
+    display: block;
+
+  }
 }
 .dashed_border {
   position: relative;
@@ -446,3 +674,4 @@ footer_socials img{
      position: relative;
      border-bottom: 3px dashed #fff;
    }
+}
