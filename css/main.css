@@ -208,7 +208,10 @@ li input{
   width: 126px;
 }
 .currency_table option{
-  margin: 9px;
+  padding: 9px;
+}
+.currency_select option{
+  padding: 0 19px;
 }
 .payment_icon{
     height: 16px;
@@ -250,16 +253,21 @@ li input{
   margin:0 50px;
 }
 .contact_target select{
-    width: 297px;
+  width: 285px;
    height: 30px;
    background-color: #ffffff;
-   border: solid 0.8px #666666;
    font-size: 14px;
    font-weight: 300;
    color: #666666;
    background-size: 10px;
    background-repeat: no-repeat;
    background-position: right;
+}
+.contact_target_select{
+  width: 297px;
+  height: 30px;
+  border: solid 0.8px #666666;
+  background: #ffffff;
 }
 .contact_target option{
   margin: 9px;
