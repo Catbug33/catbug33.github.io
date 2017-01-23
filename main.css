@@ -1,0 +1,188 @@
+ @font-face {
+    font-family: 'Noto Sans';
+    src: local('Noto Sans'), local('NotoSans'), url('fonts/notosans.woff2') format('woff2'), url('fonts/notosans.woff') format('woff'), url('fonts/notosans.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Noto Sans';
+    src: local('Noto Sans Bold'), local('NotoSans-Bold'), url('fonts/notosansbold.woff2') format('woff2'), url('fonts/notosansbold.woff') format('woff'), url('fonts/notosansbold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+html{
+  height: 100% auto;
+  overflow-y:hidden;
+
+}
+body{
+  font-family: Noto Sans;
+  margin: 0 auto;
+  height: 100% auto;
+  overflow-y:hidden;
+}
+.container{
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+}
+.jp-jplayer {
+    background-color: #ffffff;
+    height: 200px;
+    width: 200px;
+}
+input, button, submit {
+  border:none;
+  background-color: transparent;
+}
+.logo {
+    background-image: url("logo.png");
+    background-repeat: no-repeat;
+    background-size: 93% auto;
+    height: 70px;
+    margin: 5px auto 0;
+    width: 300px;
+}
+.poster {
+    /*background-image: url("poster.jpg");*/
+    border-radius: 50%;
+    display: block;
+    height: 180px;
+    margin: 0 auto 10px;
+    width: 180px;
+}
+.live_broadcast{
+  background-color: #93004A;
+  height: 25px;
+  color: #ffffff;
+  width: 72px;
+  margin: 0 auto 30px;
+  font-size: 12pt;
+  font-weight: normal;
+
+}
+.jp-details{
+color: #000000;
+width: 60%;
+margin: 0 auto;
+
+}
+.current_artist{
+  font-size: 12pt;
+  font-weight: 600;
+  height: 10px;
+}
+.current_song{
+  font-size: 10pt;
+  font-weight: 400;
+  height: 5px;
+}
+.jp-audio-stream {
+    margin-top: 100px;
+    margin: 0 auto;
+  }
+.main_player{
+  margin: 0 auto;
+  width: 30%;
+}
+.jp-interface {
+    background-color: #eeeeee;
+    position: relative;
+    width: 100%;
+}
+.jp-title {
+  height: 100%;
+   margin: 5px auto;
+    text-align: center;
+    width: 100%;
+
+}
+.jp-audio-stream .jp-controls {
+    width: 80px;
+}
+.jp-audio .jp-controls, .jp-audio-stream .jp-controls {
+    margin: 0 auto;
+}
+.jp-play{
+  background-repeat: no-repeat;
+  background-size: 80px;
+  width: 80px;
+  height: 80px;
+  margin: 15px auto 5px;
+}
+.play{
+  background-image: url('play.png');
+
+}
+.pause{
+  background-image: url('pause.png');
+}
+@media only screen and (max-width: 500px) {
+.logo {
+  width: 50%;
+}
+}
+@media only screen and (min-heigth: 640px) and (max-width: 1100px){
+.logo {
+  margin: 5px auto 10px;
+}
+
+}
+@media only screen and (min-width: 1100px) {
+.logo {
+  width: 16%;
+}
+.poster {
+    height: 220px;
+    margin: 0 auto 10px;
+    width: 220px;
+}
+}
+@media screen and ( min-height: 600px ) and (max-width: 560px){
+  .logo {
+      background-size: 93% auto;
+      height: 70px;
+      margin: 5px auto 0;
+  }
+  .poster {
+      height: 100px;
+      margin: 0 auto 10px;
+      width: 100px;
+  }
+  .jp-play{
+    background-repeat: no-repeat;
+    background-size: 70px auto;
+    width: 70px;
+    height: 70px;
+    margin: 15px auto 5px;
+  }
+}
+@media screen and ( max-height: 400px ) and (max-width: 400px){
+  .logo {
+      background-size: 93% auto;
+      height: 70px;
+      margin: 5px auto 0;
+  }
+  .poster {
+      height: 80px;
+      margin: 0 auto 10px;
+      width: 80px;
+  }
+  .jp-play{
+    background-size: 60px auto;
+    width: 60px;
+    height: 60px;
+    margin: 15px auto 5px;
+  }
+  .current_artist{
+    font-size: 10pt;
+    font-weight: 600;
+    height: 10px;
+  }
+  .current_song{
+    font-size: 8pt;
+    font-weight: 400;
+    height: 5px;
+  }
+}

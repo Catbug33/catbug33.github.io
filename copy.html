@@ -41,6 +41,37 @@
 		</div>
 	</div>
 </div>
-<script type="text/javascript" src="set.js"></script>
+<!-- <script type="text/javascript" src="set.js"></script> -->
+<script>
+
+$(document).ready(function () {
+	$.ajax({
+			type: 'GET',
+			url: 'https://eu3.radioboss.fm:2199/rpc/yevedo02/streaminfo.get',
+			data: { get_param: 'data' },
+			success: function (data) {
+					results = data.data;
+					console.log(results);
+					title = results[0].track.title;
+					console.log(title);
+					artist = results[0].track.artist;
+
+
+
+					$('#current_song').html(title);
+					$('#current_artist').html(artist);
+					 //
+					//  $('#current_song').html(escapeHtml(title));
+					//  $('#current_artist').html(escapeHtml(artist));
+					// if(results[0] == '' ){
+					// 	$(".poster").attr("src",'http://live.vozduh.fm/unknown.png');
+					// }else {
+					// 	$(".poster").attr("src",results[0]);
+					// }
+
+			}
+	});
+});
+</script>
 </body>
 </html>
