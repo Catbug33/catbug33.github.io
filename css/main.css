@@ -5,6 +5,7 @@ html,body{
   padding : 0;
   border : 0 none;
   height: 100%;
+  font-weight: 300;
 }
 ol,ul, li{
   list-style-type: none;
@@ -63,12 +64,25 @@ input[type=text] {
   display: inline;
 }
 .header_nav_item{
-  display: inline-block;
-  height: 25px;
   background-color: #ffffff;
-  border: solid 1px #666666;
+  border: 1px solid #aaaaaa;
+  display: inline-block;
   font-weight: 800;
+  height: 24px;
   padding: 5px 2% 0;
+}
+.header_nav_item_gear{
+  background-color: #ffffff;
+  border: 1px solid #aaaaaa;
+  display: inline-block;
+  font-weight: 800;
+  height: 29px;
+  margin: 0 0 -11px;
+  padding: 0 20px;
+  width: 44px;
+}
+.nav_item_inner{
+    padding: 1px 1px;
 }
 .arrow{
   width: 12px;
@@ -76,7 +90,10 @@ input[type=text] {
   padding: 0 0 0 8px;
 }
 .gear{
-  width: 13px;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  margin: -3px 14px;
 }
 .icon_list{
   display: inline-block;
@@ -139,7 +156,7 @@ display: none;
   width: 964px;
   height: 185px;
   background-color: #ffffff;
-  border: solid 1px #666666;
+   border: 0.5px solid #aaaaaa;
   margin-bottom: 0;
 }
 .currency_table_title{
@@ -165,7 +182,7 @@ display: none;
 .currency_table li{
   display: inline-flex;
   background-color: #ffffff;
-  border: solid 0.8px #666666;
+  border: solid 0.8px #aaaaaa;
   font-size: 14px;
   font-weight: 300;
   height: 30px;
@@ -237,10 +254,12 @@ li input{
   padding: 8px 5px 0 8px;
 }
 .exchange_rate{
-  text-align: center;
+  color: #aeaeae;
   font-size: 20px;
   font-weight: 600;
-  color: #aeaeae;
+  margin: -70px 0 0;
+  padding: 13px 0;
+  text-align: center;
 }
 .currency_table_double_line{
   width: 918px;
@@ -258,7 +277,7 @@ li input{
   font-size: 14px;
   font-weight: normal;
   padding-top: 33px;
-  background: radial-gradient(#DFEBFF, #FFFFFF);
+  background: linear-gradient(90deg,#FFFFFF, #DFEBFF, #FFFFFF);
 }
 .contact_target{
   display: inline-flex;
@@ -297,7 +316,7 @@ li input{
 }
 .contact_line{
   width: 964px;
-  border-bottom:  solid 2px #aeaeae;
+  border-bottom:  solid 0.6px #aeaeae;
   margin: 0 auto;
 }
 .request_button{
@@ -321,11 +340,11 @@ li input{
 
 }
 article{
-  margin: 0 auto;
+  margin: 42px auto 0 ;
   width: 964px;
   border-style: solid;
   border-width: 1px;
-  border-image-source: linear-gradient(to top, #666666, rgba(102, 102, 102, 0.86) 7%, rgba(102, 102, 102, 0) 50%, rgba(102, 102, 102, 0.86) 93%, #666666);
+  border-image-source: linear-gradient(to top, #999999, rgba(102, 102, 102, 0.86) 7%, rgba(102, 102, 102, 0) 50%, rgba(102, 102, 102, 0.86) 93%, #999999);
   border-image-slice: 1;
   display: block;
   border-collapse: collapse ;
@@ -350,7 +369,9 @@ article{
   font-size: 14px;
   font-weight: 300;
   color: #535353;
-  padding: 36px 40px 27px 23px;
+  margin: -70px 0 0;
+  padding: 13px 30px;
+  text-align: left;
 
 }
 .socials_mobile{
@@ -368,8 +389,9 @@ article{
 .socials li{
   display: inline;
 }
-.socials li img{
-    width: 24px;
+.socials li {
+  background-size: 24px;
+    /*width: 24px;*/
 }
 .socials span{
   margin: auto 40px 17px 380px;
@@ -381,7 +403,7 @@ nav{
   display: block;
   width: 963.6px;
   height: 31.2px;
-  border: solid 1px #1469eb;
+  border: solid 1px #E2ECFC;
   margin: 0 auto;
 }
 nav ul{
@@ -432,7 +454,7 @@ footer_socials img{
   width: 15px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
      .container {
        width: 320px;
        overflow: hidden;
@@ -746,30 +768,30 @@ footer_socials img{
 
 .dashed_border {
   position: relative;
-  border-bottom: 3px dashed #fff;
+  border-bottom: 1px dashed #fff;
 }
 
 
 .dashed_border::before {
   content:"";
-  border-top:3px dashed #FFF;
+  border-top:2px dashed #FFF;
   position: absolute;
   top:0;
   left:6px;
   right:0;
   width: 100%;
-  height: 2px;
+  height: 1px;
   z-index: 2;
 }
 .dashed_border:after {
    content:"";
    position: absolute;
-   bottom: -2.6px;
+   bottom: -1.2px;
    left: -3px;
  }
 .dashed_border::after {
    right: -3px;
-   height: 3px;
+   height: 1px;
    background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(102, 102, 102, 0)), color-stop(49%, #666666), color-stop(100%, rgba(102, 102, 102, 0)));
   background-image: -webkit-linear-gradient(to right, rgba(102, 102, 102, 0), #666666 49%, rgba(102, 102, 102, 0));;
    background-image: -moz-linear-gradient(to right, rgba(102, 102, 102, 0), #666666 49%, rgba(102, 102, 102, 0));;
